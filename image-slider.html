@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    .slider-container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slider-images {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slider-images img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .prev-button {
+      left: 10px;
+    }
+
+    .next-button {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider-images">
+    <img src="https://www.technogiq.com/blogs/wp-content/uploads/2021/05/Custom-web-development.jpg" alt="Image 1">
+    <img src="https://learn.g2.com/hubfs/web_developer.jpg" alt="Image 2">
+    <img src="https://admin.12grids.com/uploads/blogs/original_cover_images/abcs-of-dynamic-web-application-development-12grids.jpg" alt="Image 3">
+    <img src="https://www.howtobecomejob.com/wp-content/uploads/2021/03/how-to-become-a-web-developer.jpeg" alt="Image 4">
+  </div>
+  <div class="slider-button prev-button">Prev</div>
+  <div class="slider-button next-button">Next</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
